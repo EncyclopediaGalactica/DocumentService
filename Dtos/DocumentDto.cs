@@ -1,5 +1,8 @@
 namespace EncyclopediaGalactica.SourceFormats.Dtos;
 
+/// <summary>
+/// 
+/// </summary>
 public class DocumentDto
 {
     public long Id { get; set; }
