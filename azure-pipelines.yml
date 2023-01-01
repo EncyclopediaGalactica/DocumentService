@@ -16,10 +16,6 @@ stages:
           - script: |
               echo $PATH
               env | sort
-          - script: |
-              dotnet nuget add source --username $USERNAME --password $GH_TOKEN --store-password-in-clear-text --name github "https://nuget.pkg.github.com/EncyclopediaGalactica/index.json"
-            env:
-              USERNAME: $(userName)
 
   - stage: Feature_branch
     condition: ne(variables['System.PullRequest.SourceBranch'], '')
